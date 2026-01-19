@@ -12,7 +12,7 @@ pipeline {
         stage('Deploy to Nginx') {
             steps {
                 bat '''
-                xcopy /E /Y /I womenclothing\\* C:\\nginx\\html\\nginx-1.28.1\\html
+                xcopy /E /Y /I womenclothing\* C:\nginx\nginx-1.28.1\html
                 '''
             }
         }
